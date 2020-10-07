@@ -7,7 +7,7 @@ class StoreTester(unittest.TestCase):
 
         p1 = Store.Product("889", "Rodent of unusual size", "when a rodent of the usual size just won't do", 33.45, 8)
         p1.decrease_quantity()
-        self.assertEqual(p1.get_quantity_available(), 7)  # 执行一次decrease_quantity 那么 数量应该减少1
+        self.assertEqual(p1.get_quantity_available(), 7)
 
     def test_customer_premium_member_true(self):
 
